@@ -328,7 +328,8 @@ body {
 .info__logo-cps-320 {
   margin-top: 27px;
   margin-bottom: 27px;
-  min-width: -webkit-fill-available; }
+  min-width: -webkit-fill-available;
+  max-width: -webkit-fill-available; }
 
 .info__logo-cps-768,
 .info__logo-cps-1120 {
