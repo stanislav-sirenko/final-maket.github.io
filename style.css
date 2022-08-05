@@ -37,7 +37,7 @@ body {
   overflow-x: hidden;
   padding: 0;
   margin: 0 auto;
-  font-family: "tt_lakes";
+  font-family: 'tt_lakes';
   font-size: 16px; }
 
 .sidebar__menu {
@@ -51,8 +51,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   transform: translateX(-100%);
-  transition: 1s; 
-  overflow: scroll;}
+  transition: 1s;
+  overflow: scroll; }
   .sidebar__menu .sidebar__header {
     display: flex;
     justify-content: space-between;
@@ -80,7 +80,7 @@ body {
       position: relative;
       display: block; }
     .sidebar__menu .sidebar__menu-list li > a:hover::before {
-      content: "";
+      content: '';
       border: 4px solid #41F6D7;
       border-radius: 25%;
       position: absolute;
@@ -109,11 +109,11 @@ body {
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start; }
-      .sidebar__menu .sidebar__menu-footer .sidebar__menu-contacts a[href^="mailto:"] {
+      .sidebar__menu .sidebar__menu-footer .sidebar__menu-contacts a[href^='mailto:'] {
         text-decoration: none;
         color: #1b1c21;
         padding: 0 16px 16px 0; }
-      .sidebar__menu .sidebar__menu-footer .sidebar__menu-contacts a[href^="tel:"] {
+      .sidebar__menu .sidebar__menu-footer .sidebar__menu-contacts a[href^='tel:'] {
         text-decoration: none;
         color: #1b1c21;
         padding: 0 16px 40px 0;
@@ -282,7 +282,7 @@ body {
 .text-container {
   padding: 0;
   margin: 0;
-  font-family: "tt_lakes";
+  font-family: 'tt_lakes';
   color: #1b1c21;
   font-size: 14px; }
   .text-container .text-visible-block,
@@ -293,7 +293,7 @@ body {
   .text-container .btn-more-1 {
     background-color: transparent;
     border: none;
-    font-family: "tt_lakes";
+    font-family: 'tt_lakes';
     color: #1b1c21;
     font-size: 16px;
     cursor: pointer;
@@ -310,7 +310,7 @@ body {
     font-size: 14px; }
     .block-2 .text-container {
       width: 500px;
-      font-family: "tt_lakes";
+      font-family: 'tt_lakes';
       font-size: 14px; }
     .block-2 .text-container .text-visible {
       display: block; } }
@@ -682,7 +682,7 @@ footer {
   overflow-x: hidden;
   padding: 0;
   margin: 0 auto;
-  font-family: "tt_lakes";
+  font-family: 'tt_lakes';
   font-size: 16px;
   min-width: 440px;
   max-width: 440px;
@@ -730,7 +730,7 @@ footer {
   margin: 44px 0 24px 0; }
 
 .modal-call__title::before {
-  content: " ";
+  content: ' ';
   background-image: url(./static/highlight.svg);
   position: absolute;
   width: 3.5px;
@@ -742,7 +742,8 @@ footer {
   flex-direction: column;
   justify-content: flex-start; }
 
-.modal-call__form-item, .modal-chat__form-item {
+.modal-call__form-item,
+.modal-chat__form-item {
   width: 376px;
   height: 48px;
   border: 1px solid #eaeaea;
@@ -755,7 +756,8 @@ footer {
 .textarea {
   resize: none;
   height: 120px;
-  padding-top: 16px; }
+  padding-top: 16px;
+  font-family: 'tt_lakes'; }
 
 .modal-chat__form-item {
   display: none; }
@@ -772,6 +774,15 @@ footer {
   background-color: transparent;
   cursor: pointer;
   text-align: right; }
+
+@media (max-width: 441px) {
+  .modal-call {
+    position: inherit;
+    max-width: 100vh;
+    min-width: auto; }
+  .modal-chat__form-item,
+  .modal-call__form-item {
+    width: auto; } }
 
 
 /*# sourceMappingURL=style.css.map*/
