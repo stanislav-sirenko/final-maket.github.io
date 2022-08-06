@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "tt_lakes";
+  font-family: 'tt_lakes';
   src: url(./fonts/TTLakes-Regular.woff) format("woff2"), url(./fonts/TTLakes-Regular.ttf) format("ttf");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: "tt_lakes";
+  font-family: 'tt_lakes';
   src: url(./fonts/TTLakes-Bold.woff) format("woff2"), url(./fonts/TTLakes-Bold.ttf) format("ttf");
   font-weight: bold;
   font-style: bold; }
@@ -13,7 +13,7 @@
 body {
   min-width: auto;
   max-height: auto;
-  font-family: "tt_lakes";
+  font-family: 'tt_lakes';
   margin: 0 auto;
   background-color: #f2f2f2;
   display: flex;
@@ -46,7 +46,7 @@ body {
   top: 0;
   min-width: 320px;
   height: 100vh;
-  background-color: #FFF;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -81,7 +81,7 @@ body {
       display: block; }
     .sidebar__menu .sidebar__menu-list li > a:hover::before {
       content: '';
-      border: 4px solid #41F6D7;
+      border: 4px solid #41f6d7;
       border-radius: 25%;
       position: absolute;
       left: -28px;
@@ -121,7 +121,7 @@ body {
         font-weight: bold; }
     .sidebar__menu .sidebar__menu-footer .sidebar__menu-language {
       display: flex;
-      justify-content: start;
+      justify-content: flex-start;
       padding: 0px;
       list-style: none; }
       .sidebar__menu .sidebar__menu-footer .sidebar__menu-language > li > a {
@@ -168,8 +168,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFF;
-  border-bottom: 1px solid #D9FFF5;
+  background-color: #fff;
+  border-bottom: 1px solid #d9fff5;
   height: 88px; }
   .header button {
     background-color: transparent;
@@ -227,7 +227,7 @@ body {
       margin-right: auto;
       font-size: 28px;
       font-style: bold;
-      font-family: "tt_lakes"; }
+      font-family: 'tt_lakes'; }
 
 .info__title-icons {
   display: none; }
@@ -250,7 +250,7 @@ body {
   height: 45px;
   overflow: scroll; }
   .info__menu::after {
-    content: "";
+    content: '';
     display: block;
     flex-shrink: 0;
     margin-right: 35px; }
@@ -272,8 +272,8 @@ body {
       .info__menu .info__menu-ul .info__menu-ul-item a:active {
         color: #61f4f7; }
       .info__menu .info__menu-ul .info__menu-ul-item:hover {
-        background-color: #FFF;
-        border: 2px solid #B8FFEC;
+        background-color: #fff;
+        border: 2px solid #b8ffec;
         border-radius: 6px;
         padding: 8px 9px 8px 16px;
         cursor: pointer;
@@ -372,17 +372,17 @@ body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  border-top: 1px solid #D9FFF5; }
+  border-top: 1px solid #d9fff5; }
 
 .technique__text {
   max-height: 80px;
-  font-family: "tt_lakes";
+  font-family: 'tt_lakes';
   color: #7e7e82;
   font-size: 16px;
   line-height: 24px;
   padding: 16px;
-  background: linear-gradient(90deg, #f8f8f8 1.39%, #FFF 100%);
-  border-top: 1px solid #D9FFF5; }
+  background: linear-gradient(90deg, #f8f8f8 1.39%, #fff 100%);
+  border-top: 1px solid #d9fff5; }
 
 .swiper-container .swiper {
   background-color: #f2f2f2;
@@ -410,7 +410,7 @@ body {
     flex-wrap: wrap; } }
 
 .swiper .swiper-slide {
-  background-color: #FFF;
+  background-color: #fff;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   height: 72px;
@@ -446,7 +446,7 @@ body {
 .swiper .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #B5B6BC; }
+  background-color: #b5b6bc; }
 
 @media (min-width: 768px) {
   .swiper .swiper-pagination-bullet {
@@ -459,7 +459,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: scroll;
-  box-shadow: inset -35px 0px 40px 3px #FFF; }
+  box-shadow: inset -35px 0px 40px 3px #fff; }
 
 .technique__brand-icons > li {
   display: flex;
@@ -470,7 +470,7 @@ body {
   max-height: 70px;
   border: 1px solid #eaeaea;
   border-radius: 6px;
-  background-color: #FFF; }
+  background-color: #fff; }
 
 .technique__brand-icons-logo {
   padding: 16px; }
@@ -478,7 +478,7 @@ body {
 .btn-more {
   background-color: transparent;
   border: none;
-  font-family: "tt_lakes";
+  font-family: 'tt_lakes';
   font-size: 16px;
   cursor: pointer;
   padding: 0 0 32px 16px; }
@@ -487,7 +487,8 @@ body {
   margin-left: 16px; }
 
 @media (max-width: 767px) {
-  .btn-more, .technique-brands .read-more-img {
+  .btn-more,
+  .technique-brands .read-more-img {
     display: none; }
   .technique-types .read-more-img {
     display: none; } }
@@ -497,11 +498,11 @@ body {
     display: none; } }
 
 @media (min-width: 968px) {
-  .technique-brands .hide-element:nth-child(-n+6) {
+  .technique-brands .hide-element:nth-child(-n + 6) {
     display: block; } }
 
 @media (min-width: 1290px) {
-  .technique-brands .hide-element:nth-child(-n+8) {
+  .technique-brands .hide-element:nth-child(-n + 8) {
     display: block; } }
 
 @media (min-width: 768px) {
@@ -514,7 +515,7 @@ body {
     width: 240px; } }
 
 .swiper .swiper-slide-types {
-  background-color: #FFF;
+  background-color: #fff;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   height: 160px;
@@ -527,11 +528,11 @@ body {
     display: none; } }
 
 @media (min-width: 968px) {
-  .technique-types .hide-element:nth-child(-n+3) {
+  .technique-types .hide-element:nth-child(-n + 3) {
     display: block; } }
 
 @media (min-width: 1190px) {
-  .technique-types .hide-element:nth-child(-n+4) {
+  .technique-types .hide-element:nth-child(-n + 4) {
     display: block; } }
 
 .swiper .swiper-slide-types .types {
@@ -552,7 +553,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #FFF;
+  background-color: #fff;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   height: 200px;
@@ -641,7 +642,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #D9FFF5;
+  border-top: 1px solid #d9fff5;
   font-size: 14px;
   color: #7e7e82; }
 
@@ -687,7 +688,7 @@ footer {
   min-width: 440px;
   max-width: 440px;
   min-height: 100vh;
-  background-color: #FFF;
+  background-color: #fff;
   right: 0;
   transform: translateX(100%);
   transition: 1s; }
@@ -758,9 +759,6 @@ footer {
   height: 120px;
   padding-top: 16px;
   font-family: 'tt_lakes'; }
-
-.modal-chat__form-item {
-  display: none; }
 
 .modal-call__text {
   font-size: 14px;
