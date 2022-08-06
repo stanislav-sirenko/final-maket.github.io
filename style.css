@@ -64,16 +64,17 @@ body {
       .sidebar__menu .sidebar__header li .sidebar__header-right {
         margin-left: 70px; }
   .sidebar__menu .sidebar__menu-list {
-    padding: 0; }
+    padding: 0;
+    margin: 0; }
     .sidebar__menu .sidebar__menu-list > li {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
       height: 50%;
-      margin: 32px 24px 0 24px;
+      padding: 32px 24px 0 24px;
       list-style: none;
-      padding: 0; }
+      margin: 0; }
     .sidebar__menu .sidebar__menu-list a {
       text-decoration: none;
       color: #1b1c21;
@@ -90,8 +91,8 @@ body {
       transition-duration: 0.5s;
       color: #7e7e82; }
   .sidebar__menu .sidebar__menu-footer {
-    padding: 24px 24px 32px 24px;
-    margin: auto 0 0 0; }
+    padding: 0px 24px;
+    margin: auto 0 0; }
     .sidebar__menu .sidebar__menu-footer .sidebar__menu-footer-icons {
       display: flex;
       justify-content: flex-start;
@@ -116,7 +117,7 @@ body {
       .sidebar__menu .sidebar__menu-footer .sidebar__menu-contacts a[href^='tel:'] {
         text-decoration: none;
         color: #1b1c21;
-        padding: 0 16px 40px 0;
+        padding: 0 16px 10px 0;
         font-size: 24px;
         font-weight: bold; }
     .sidebar__menu .sidebar__menu-footer .sidebar__menu-language {
@@ -157,7 +158,7 @@ body {
     transform: translateX(0%);
     box-shadow: 0 0 20px 7px #a2a6b1; }
   .main-active {
-    position: absolute;
+    position: fixed;
     transform: translateX(320px);
     transition: 1s;
     opacity: 0.3;
@@ -775,7 +776,6 @@ footer {
 
 @media (max-width: 441px) {
   .modal-call {
-    position: inherit;
     max-width: 100vh;
     min-width: auto; }
   .modal-chat__form-item,
